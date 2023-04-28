@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 
 def grafica_pie(x,y):
     fig, ax = plt.subplots()
-    ax.pie(x , labels= y)
+    ax.pie(y , labels= x)
     plt.savefig('.pie.png')
     plt.close()
     
