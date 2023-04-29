@@ -31,7 +31,8 @@ def lector(x):
 
 def FILTRAR_PAIS(D, C):
     R = list(filter(lambda x: x['Country/Territory'] == C, D))
-    return R
+
+    return  R
 
 # filtro por fila
 def FILTRAR_FILA(D, C, caracteristica):
@@ -65,7 +66,8 @@ import matplotlib.pyplot as plt
 def generacion_barras(L, V):
     fig, ax = plt.subplots()
     ax.bar(L, V)
-    plt.savefig("bar.png")
+    
+    plt.savefig("./imagenes/pais.png")
     plt.close()
 
 def generacion_pai(L, V):
@@ -82,12 +84,15 @@ def generacion_pai(L, V):
 
 
 if __name__ == '__main__':
+
+    pais = input("dijite el nombre")
+
     #lecto de archivos csv
     P = lector('world_population.csv')
 
 
     #filtro de filas por paises
-    R = FILTRAR_PAIS(P, 'Kazakhstan')
+    R = FILTRAR_PAIS(P, pais)
 
     # para que el modulo de datos de paises funcione, este le debemos especificar la posicion
     R2 = R[0]
@@ -96,6 +101,12 @@ if __name__ == '__main__':
     l, v = datos_de_paises(R2)
 
     #generacion de grafico de barras
+    """
+    print(R)
+    t = R['Country/Territory']
+    print(t)
+    """
+
     generacion_barras(l,v)
 
     #filtro de fila , para esto tu necesitas (los datos, la columna a filtrar, la caracteristica que quieres filtrar)
