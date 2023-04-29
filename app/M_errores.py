@@ -66,7 +66,7 @@ import matplotlib.pyplot as plt
 def generacion_barras(L, V):
     fig, ax = plt.subplots()
     ax.bar(L, V)
-    
+
     plt.savefig("./imagenes/pais.png")
     plt.close()
 
