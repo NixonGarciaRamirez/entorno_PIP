@@ -6,6 +6,7 @@
       <excludeFolder url="file://$MODULE_DIR$/env/lib/python3.9/site-packages" />
       <excludeFolder url="file://$MODULE_DIR$/env_analisisD/lib/python3.11/site-packages" />
       <excludeFolder url="file://$MODULE_DIR$/grafica/lib/python3.10/site-packages" />
+      <excludeFolder url="file://$MODULE_DIR$/L_tienda/lib/python3.10/site-packages" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.11 (app)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
