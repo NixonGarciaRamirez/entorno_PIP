@@ -77,7 +77,7 @@ def generacion_pai(L, V):
     # grafia de pai con el eje central y que sea un circulo
     ax.axis('equal')
     plt.title("grafico de paster")
-    plt.savefig("pai.png")
+    plt.savefig("pai2.png")
     plt.close()
 
 
