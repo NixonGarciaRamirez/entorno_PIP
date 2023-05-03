@@ -1,0 +1,13 @@
+services:
+  #aqui le damos un nombre al servicio
+  app-csv:
+    #ahora le vamos a dar el comando build para que construya el servicio
+    build:
+      #y le damos un contexto o una ubicacion donde comenzar
+      context: .
+      #y le decimos cual es el archivo a leer en este caso DOckerfile
+      dockerfile: Dockerfile
+    volumes:
+      #. = este proyecto
+      #: este enlazado
+      - .:/app
