@@ -9,5 +9,5 @@ services:
       dockerfile: Dockerfile
     volumes:
       #. = este proyecto
-      #: este enlazado
+      #: este enlazado con .... y seguido de la carpeta a elazar
       - .:/app
